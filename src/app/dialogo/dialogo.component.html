@@ -1,0 +1,64 @@
+<h1 mat-dialog-title>Alta Nuevo Socio</h1>
+<div mat-dialog-content>
+  <form [formGroup]="formulario">
+    <mat-form-field appearance="outline">
+      <mat-label>Nombre</mat-label>
+      <input formControlName="nombre" matInput placeholder="Nombre" />
+      <mat-error *ngIf="myError('nombre', 'required')"
+        >Campo obligatorio</mat-error
+      >
+      <mat-error *ngIf="myError('nombre', 'minlength')"
+        >Este campo debe tener al menos 3 caracteres</mat-error
+      >
+      <mat-error *ngIf="myError('nombre', 'pattern')"
+        >Este campo solo permite texto
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Apellidos</mat-label>
+      <input formControlName="apellidos" matInput placeholder="Apellidos" />
+      <mat-error *ngIf="myError('apellidos', 'required')"
+        >Campo obligatorio</mat-error
+      >
+      <mat-error *ngIf="myError('apellidos', 'minlength')"
+        >Este campo debe tener al menos 3 caracteres</mat-error
+      >
+      <mat-error *ngIf="myError('apellidos', 'pattern')"
+        >Este campo solo permite texto
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>DNI</mat-label>
+      <input formControlName="dni" matInput placeholder="DNI" />
+      <mat-error *ngIf="myError('dni', 'required')"
+        >Campo obligatorio</mat-error
+      >
+      <mat-error *ngIf="myError('dni', 'pattern')"
+        >Introduzca un número de DNI: 8 números y una letra</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Teléfono</mat-label>
+      <input formControlName="telefono" matInput placeholder="Nombre" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Sexo</mat-label>
+
+      <mat-select formControlName="sexo" matInput placeholder="Sexo">
+        <mat-option value="Hombre">Hombre</mat-option>
+        <mat-option value="Mujer">Mujer</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Cerrar</button>
+  <button
+    style="margin-left: 8px"
+    mat-raised-button
+    color="primary"
+    (click)="anadirSocio()"
+  >
+    {{ actionBtn }}
+  </button>
+</div>

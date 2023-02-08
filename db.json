@@ -1,0 +1,54 @@
+{
+  "sociosGimnasio": [
+    {
+      "nombre": "Paula",
+      "apellidos": "Rodriguez Cosano ",
+      "dni": "12345678M",
+      "telefono": "12345678",
+      "sexo": "Mujer",
+      "id": 1
+    },
+    {
+      "nombre": "Jose",
+      "apellidos": "Castro Rodriguez",
+      "dni": "12345678m",
+      "telefono": "123456784",
+      "sexo": "Hombre",
+      "id": 2
+    },
+    {
+      "nombre": "Carmen",
+      "apellidos": "Ortega Doña",
+      "dni": "12345678P",
+      "telefono": "12345678",
+      "sexo": "Mujer",
+      "id": 3
+    },
+    {
+      "nombre": "Tom",
+      "apellidos": "Perez Zamora",
+      "dni": "12345678P",
+      "telefono": "12345678",
+      "sexo": "Hombre",
+      "id": 4
+    },
+    {
+      "nombre": "Paula",
+      "apellidos": "Cosano Rhee",
+      "dni": "12345678M",
+      "telefono": "1234567",
+      "sexo": "Mujer",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

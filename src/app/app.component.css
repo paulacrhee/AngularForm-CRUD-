@@ -1,0 +1,46 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+table {
+  width: 100%;
+  margin-right: 15px;
+}
+* {
+  box-sizing: border-box;
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+td,
+th {
+  text-align: left;
+}
+
+.img-responsive {
+  height: 300px;
+  margin-top: 95px;
+}
+
+.column {
+  float: left;
+  padding: 5px;
+}
+.column1 {
+  width: 30%;
+}
+.column2 {
+  width: 70%;
+}
+
+/* Clearfix (clear floats) */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
