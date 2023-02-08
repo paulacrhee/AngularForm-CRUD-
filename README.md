@@ -1,5 +1,6 @@
 # AngularForm-CRUD-
-CRUD using Angular, json-server, Material UI
+CRUD using Angular, json-server and Material UI
+
 Installation json-server: npm install -g json-server
 Start API REST Fake: json-server --watch db.json
 
